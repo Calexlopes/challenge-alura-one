@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logoAlura" src="/Imagens/logoAlura.png" alt="Logo da Alura">
+        </div>
+    </header>
+
+    <main>
+      <div class="main">
+        <div class="elementosEsquerda">
+            <textarea class="digite_texto"
+            placeholder="Digite seu texto aqui..."></textarea>
+            <div class="esquerda_footer">
+             <img src="/Imagens/exclamacao.png" alt=""> 
+             <span class="esquerda_info">Apenas letras minúsculas e sem acento.</span>
+             <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+                <button class="btn-reset" onclick="btnReset()">Limpar</button>
+            </div>   
+            </div>                     
+        </div> 
+        <div class="elementosDireita ajustar">
+            <img class="boneco" src="/Imagens/boneco.png" alt="">
+            <p class="mensagem ajustar">Nenhuma mensagem encontrada</p>
+            <p class="direita_info">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button class="btn-copiar oculto" onclick="btnCopiar()">Copiar</button>
+        </div>
+      </div>    
+        
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Carlos Lopes</p>
+    </footer>
+    <script src="script.js"></script>    
+</body>
+</html>
